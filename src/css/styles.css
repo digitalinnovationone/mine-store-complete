@@ -1,0 +1,76 @@
+body {
+  background-color: #262423;
+}
+
+@font-face {
+  font-family: "minefont";
+  src: url("../assets/fonts/minefont.ttf");
+}
+
+/* personalizando menu --------------------------------*/
+.menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(38, 36, 35, 0.756);
+  box-shadow: 0px 6px 10px 5px rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* personalizando as caixas --------------------------*/
+#box-items {
+  margin-top: 120px;
+  margin-bottom: 100px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 367.5px;
+  width: 367.5px;
+  background: rgb(129, 251, 95);
+  background: linear-gradient(
+    184deg,
+    rgba(129, 251, 95, 0.00043767507002800965) 0%,
+    rgba(13, 217, 64, 0.9136029411764706) 66%
+  );
+  position: relative;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.label {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.745);
+
+  position: absolute;
+  bottom: 0;
+
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-family: "minefont";
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box > img:hover {
+  transform: scale(1.15);
+}
